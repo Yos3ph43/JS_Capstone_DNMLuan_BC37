@@ -66,7 +66,12 @@ const renderProduct = (data) => {
                 <div class="info">
                     <h1 class="productName">${data[i].name}</h1>
                     <p class="desc">${data[i].desc}</p>
-                    <span class="productPrice">${data[i].price}$</span>
+                    <div class="productPrice"><span class="">${data[i].price}$</span></div>
+                    <div class="detail">
+                        <p class="screen">Màn hình: ${data[i].screen}</p>
+                        <p class="frontCamera">Camera trước: ${data[i].frontCamera}</p>
+                        <p class="backCamera">Camera sau: ${data[i].backCamera}</p>
+                    </div>
                     <div class="action">
                       <button class="btn buyNow"  data-id="${data[i].id}"  onclick="buyNow(event)">Buy Now</button>                    
                       <button class="btn addToCart" 
@@ -76,11 +81,7 @@ const renderProduct = (data) => {
                         Add Cart 
                       </button>
                     </div>
-                    <div class="detail">
-                        <p class="screen">Màn hình: ${data[i].screen}</p>
-                        <p class="frontCamera">Camera trước: ${data[i].frontCamera}</p>
-                        <p class="backCamera">Camera sau: ${data[i].backCamera}</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>`;

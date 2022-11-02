@@ -41,10 +41,10 @@ body {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  background: #008510;
+  background: #3900bd;
   color: #f9eafd;
   &:hover {
-    box-shadow: 0 0 5px #5eec6f;
+    box-shadow: 0 0 10px #9466ff;
     transform: scale(105%);
   }
 }
@@ -187,19 +187,28 @@ body {
           }
 
           .info {
-            padding: 1.25rem 0;
+            padding-top: 1.25rem;
             .productName {
               color: #f9eafd;
             }
             .productPrice {
-              text-align: right;
-              color: #f9eafd;
-              font-weight: 600;
-              font-size: 1.2rem;
-              transition: all 0.3s;
-              &:hover {
-                transform: scale(110%);
-                box-shadow: 0 0 10px #deadfc;
+              display: flex;
+              justify-content: flex-end;
+              span {
+                color: #f9eafd;
+                font-weight: 600;
+                font-size: 1.25rem;
+                transition: all 0.3s;
+                &:hover {
+                  transform: scale(110%);
+                  box-shadow: 0 0 10px #deadfc;
+                }
+                text-align: right;
+                // display: inline-block;
+                background: #1b002c;
+                padding: 7px 17px;
+                border-radius: 20px;
+                box-shadow: 0 0 10px #b342d3;
               }
             }
             .desc {
@@ -225,18 +234,10 @@ body {
                 }
               }
             }
-            .productPrice {
-              text-align: right;
-              display: inline-block;
-              margin-bottom: 15px;
-              background: #1b002c;
-              padding: 5px 15px;
-              border-radius: 15px;
-              box-shadow: 3px 3px 10px #621777;
-            }
+
             .detail {
               font-size: 1rem;
-              margin-top: 10px;
+              margin: 10px 0;
               padding: 10px;
               max-height: 0;
               opacity: 0;
@@ -284,11 +285,12 @@ body {
     display: flex;
     align-items: stretch;
     .btn-closeCart {
+      font-size: 1rem;
       background: #df6aff;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 7px;
+      padding: 10px;
       border: 0;
       border-right: 1px solid rgb(0, 0, 0, 0.2);
       outline: 0;

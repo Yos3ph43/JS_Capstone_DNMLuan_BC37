@@ -131,16 +131,17 @@ body {
     }
 
     .btn_delete {
-      color: $cWhite;
       background: rgb(233, 0, 0);
-      border: 0;
-      border-radius: 5px;
     }
     .btn_update {
-      color: $c1-100;
       background: $c1-400;
+    }
+    .btn_update,
+    .btn_delete {
+      color: #fff;
       border: 0;
       border-radius: 5px;
+      padding: 5px 10px;
     }
   }
 }

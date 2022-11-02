@@ -163,25 +163,11 @@ const validateForm = () => {
   const productPrice = document.getElementById("product_price").value.trim();
   const productType = document.getElementById("product_type").value;
   const productImg = document.getElementById("product_img").value.trim();
-  const productScreen = document.getElementById("product_screen").value.trim();
-  const productBackCamera = document
-    .getElementById("product_backCamera")
-    .value.trim();
-  const productFrontCamera = document
-    .getElementById("product_frontCamera")
-    .value.trim();
-  const productDesc = document.getElementById("product_desc").value.trim();
   isValid &=
     required(productName, "warn_name") && checkString(productName, "warn_name");
   isValid &= required(productPrice, "warn_price");
   isValid &= required(productType, "warn_type");
   if (productImg) isValid &= checkImageURL(productImg, "warn_img");
-  // if (productScreen) isValid &= checkString(productScreen, "warn_screen");
-  // if (productBackCamera)
-  //   isValid &= checkString(productBackCamera, "warn_backCamera");
-  // if (productFrontCamera)
-  //   isValid &= checkString(productFrontCamera, "warn_frontCamera");
-  // if (productDesc) isValid &= checkString(productDesc, "warn_desc");
   return isValid;
 };
 
